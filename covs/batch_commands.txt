@@ -1,0 +1,12 @@
+for i in {0..99} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {100..199} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {200..299} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {300..399} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {400..499} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {500..599} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {600..699} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {700..799} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {800..899} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {900..999} ; do ./cov {} ini_files/cov_desy3 $i; done
+for i in {1000..1035} ; do ./cov {} ini_files/cov_desy3 $i; done
+
