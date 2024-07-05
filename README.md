@@ -19,7 +19,7 @@ To get started with computing covariances, follow the steps below:
 
 2.  Navigate to the <span>covs</span> directory and run command:  
     ```shell
-    $ make covs
+     make covs
     ```
 
 3.  Several executables are created: `cov_flat_fft` is
@@ -30,7 +30,7 @@ To get started with computing covariances, follow the steps below:
 
 4.  As an exmaple, run command:  
     ```shell
-    $ ./cov 1 ini_files/cov_test_g.ini
+     ./cov 1 ini_files/cov_test_g.ini
     ```
     to compute the 1st block of the curved sky 3x2pt Gaussian
     covariance of the test example, specified by the ini file
@@ -41,11 +41,11 @@ To get started with computing covariances, follow the steps below:
 5.  There are 66 blocks in total for the example run above. One can
     compute all of them by running command:  
     ```shell
-    $ for i in {1..66}; do ./cov $i ini_files/cov_test_g.ini; done
+     for i in {1..66}; do ./cov $i ini_files/cov_test_g.ini; done
     ```
     or
     ```shell
-    $ echo {1..66} | xargs -n 1 -I{} ./cov {} ini_files/cov_test_g.ini
+     echo {1..66} | xargs -n 1 -I{} ./cov {} ini_files/cov_test_g.ini
     ```
 
     **Warning**: non-Gaussian covariances can take hours to compute for
@@ -56,7 +56,7 @@ To get started with computing covariances, follow the steps below:
     matrix by first combining all the blocks and then running the
     provided plotting script <span>plot.py</span>:  
     ```shell
-    $ f="cov_test"; cat output/out_cov_test/t* > $f; python plot.py $f
+     f="cov_test"; cat output/out_cov_test/t* > $f; python plot.py $f
     ```
     The combined covariance file is specified by variable
     `f`, and the plot (in <span>.pdf</span>) will be saved in
